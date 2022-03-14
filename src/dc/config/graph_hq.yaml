@@ -1,0 +1,26 @@
+models_to_graph:
+  - "JDC-Cn.8"
+  - "std AE"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "denoise+std AE"
+  - "denoise+JPEG"
+  - "denoise+JPEGXL"
+  - "denoise+BPG"
+  - "Testolina"
+  - "JDC-UD"
+  - "JDC-CN"
+  - "JDC-N"
+xrange:
+  - 0.11
+  - 0.49
+yrange:
+  - 0.94
+  - 0.98
+# csv_fpath: "../../results/dc/twomodels_test_denoise_q>=1.00;-bpp-msssim.csv"
+csv_fpath: "../../results/dc/twomodels_test_denoise_q=[0.95,0.999];-bpp-msssim.csv"
+legend_ncol: 4
+legend_size: 7
+#fig_height: 3.7
+fig_height: 4.8

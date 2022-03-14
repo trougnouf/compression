@@ -1,0 +1,3 @@
+test_reserve: configs/test_set_nind.yaml
+models_dpath: ../../models/nind_denoise
+orig_data: ../../datasets/NIND

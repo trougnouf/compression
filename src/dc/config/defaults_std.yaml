@@ -1,0 +1,63 @@
+---
+global_step: 0
+tot_epoch: 10000000
+tot_steps: 6000000
+train_lambda: 4096
+base_lr: 0.0001
+lr_decay: 0.99
+lr_update_mode: worse_than_previous
+print_freq: 250
+out_channel_N: 192
+out_channel_M: 256
+lossf: mse
+arch: ManyPriors
+num_distributions: 64
+dist_patch_size: 1
+seed: 234
+save_model_freq: 10000
+val_step: 10000
+#kodak_test_step: 20000
+test_step: 50000
+image_size: 256
+train_denoise_data_dpaths:
+    - '../../datasets/cropped/NIND_256_96'
+train_std_data_dpaths:
+  - '../../datasets/train/resized/1024/FeaturedPictures'
+#  - '../../datasets/train/resized/1024/Formerly_featured_pictures_on_Wikimedia_Commons'
+#  - '../../datasets/train/resized/1024/Photographs_taken_on_Ektachrome_and_Elite_Chrome_film'
+#val_dpath: '../../datasets/test/clic_valid_2020'  # used in testing when using denoising as validation
+test_denoise_dpath: '../../datasets/test/NIND'
+#test_kodak_dpath: '../../datasets/test/kodak'  # deprecate
+test_std_dpaths:
+  - '../../datasets/test/kodak'
+  - '../../datasets/test/clic_test_pro'
+val_std_dpath: '../../datasets/test/clic_valid_2020'
+test_commons_dpath: '../../datasets/test/Commons_Test_Photographs'  # not used in training, TODO deprecate
+device: 0
+optimizer_init: Adam # Adam, RangerLars
+conditional_distribution: Laplace # Laplace, Gaussian
+activation_function: GDN # GDN, Hardswish, GELU
+bitparm_init_mode: normal # normal, xavier_uniform
+bitparm_init_range: 0.01
+in_fpath: "../../datasets/test/Commons_Test_Photographs/Garden_snail_moving_down_the_Vennbahn_in_disputed_territory_(DSCF5879).png"  # unused
+#denoising_ratio: 0.75
+denoise_test_reserve:
+ - 'ursulines-building'
+ - 'stefantiek'
+ - 'CourtineDeVillersDebris'
+ - 'MuseeL-Bobo'
+ - 'ursulines-red'
+  # - ursulines-red
+  # - stefantiek
+  # - ursulines-building
+  # - MuseeL-Bobo
+  # - CourtineDeVillersDebris
+  # - MuseeL-Bobo-C500D
+  # - Pen-pile
+  # - 7D-2
+  # - 7D-7
+passthrough_ae: true
+pretrain_prefix: 'val'
+batch_size_denoise: 0
+batch_size_std: 4
+checkpoints_dpath: ../../models/compress

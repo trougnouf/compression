@@ -1,0 +1,6 @@
+train_std_data_dpaths:
+  - '../../datasets/filtered/ISO200/resized/1024/FeaturedPictures'
+batch_size_denoise: 4
+batch_size_std: 1
+min_quality: 0.80
+lossf: msssim

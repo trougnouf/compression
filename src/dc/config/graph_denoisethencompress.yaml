@@ -1,0 +1,24 @@
+models_to_graph:
+  - "std AE"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "denoise+std AE"
+  - "denoise+JPEG"
+  - "denoise+JPEGXL"
+  - "denoise+BPG"
+  # - JDC-CN
+  # - JDC-Cn.8
+  # - Testolina
+xrange:
+  - 0.0
+  - 1.50
+yrange:
+  - 0.869
+  - 0.973
+csv_fpath: "../../results/dc/twomodels_test_denoise_q=[0.7,0.999];-bpp-msssim.csv"
+legend_ncol: 2
+legend_size: 6
+#fig_height: 2.8
+fig_height: 4.8
+#graph_title: "Noisy images compressed with or without prior denoising"

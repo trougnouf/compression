@@ -1,0 +1,24 @@
+models_to_graph:
+  - "JDC-Cn.8"
+  - "JDC-Cn.8-MS-SSIM"
+  - "JDC-Cn.9-MS-SSIM"
+  - "std AE"
+  # - "std AE (MS-SSIM)"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "denoise+std AE"
+  - "denoise+std AE (MS-SSIM)"
+  - "denoise+JPEG"
+  - "denoise+JPEGXL"
+  - "denoise+BPG"
+  - "JDC-UD"
+xrange:
+  - 0.1
+  - 0.441
+yrange:
+  - 0.93
+  - 0.973
+csv_fpath: "../../results/dc/twomodels_test_denoise_q=[0.7,0.999];-bpp-msssim.csv"
+legend_ncol: 3
+legend_size: 7

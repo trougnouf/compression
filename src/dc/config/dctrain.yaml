@@ -1,0 +1,2 @@
+quality_crops_csv_fpaths:
+  - '../../datasets/cropped/NIND_256_192-msssim.csv'

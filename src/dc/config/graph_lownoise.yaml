@@ -1,0 +1,19 @@
+models_to_graph:
+  - "JDC-N"
+  - "JDC-CN"
+  - "JDC-Cn.2"
+  - "JDC-Cn.4"
+  # - "JDC-Cn.5"
+  - "JDC-Cn.6"
+  # - "JDC-Cn.7"
+  - "JDC-Cn.8"
+  # - "lownoise (85)"
+  - "JDC-Cn.9"
+  - JDC-UD
+  - "std AE"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "JDC-Cn.8-Tdec"
+  #- "testolina"
+ignore_std: True

@@ -1,0 +1,30 @@
+models_to_graph:
+  - "JDC-N"
+  - "JDC-CN"
+  # - "lownoise (20)"
+  # - "lownoise (40)"
+  # - "lownoise (50)"
+  # - "lownoise (60)"
+  # - "lownoise (70)"
+  - "JDC-Cn.8"
+  # - "lownoise (90)"
+  # - "JDC-Cn.8-MS-SSIM"
+  # - "JDC-Cn.9-MS-SSIM"
+  - JDC-UD
+  - "std AE"
+  # - "std AE (MS-SSIM)"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  # - "JDC-Cn.8-Tdec"
+  - "Testolina"
+ignore_std: True
+xrange:
+  - 0.09
+  - 0.6
+yrange:
+  - 0.94
+  - 0.99
+csv_fpath: "../../results/dc/twomodels_test_clic_pro-bpp-msssim.csv"
+#graph_title: "Rate-distortion on clean images"
+fig_height: 3.8

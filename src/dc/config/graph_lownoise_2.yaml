@@ -1,0 +1,30 @@
+models_to_graph:
+  - "JDC-N"
+  - "JDC-CN"
+  - "JDC-Cn.2"
+  - "JDC-Cn.4"
+  # - "lownoise (.5)"
+  - "JDC-Cn.6"
+  # - "lownoise (.7)"
+  - "JDC-Cn.8"
+  # - "lownoise (85)"
+  - "JDC-Cn.9"
+  - JDC-UD
+  - "std AE"
+  - "denoise+std AE"
+  - "denoise+JPEGXL"
+  - "std AE"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "JDC-Cn.8-Tdec"
+  #- "testolina"
+ignore_std: True
+xrange:
+  - 0.13
+  - 0.35
+yrange:
+  - 0.945
+  - 0.9646
+csv_fpath: "../../results/dc/twomodels_test_denoise_q=[0.7,0.999];-bpp-msssim.csv"
+fig_height: 4.8

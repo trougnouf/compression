@@ -1,0 +1,20 @@
+models_to_graph:
+  - "JDC-N"
+  - "JDC-CN"
+  # - "lownoise (20)"
+  # - "lownoise (40)"
+  # - "lownoise (50)"
+  # - "lownoise (60)"
+  # - "lownoise (70)"
+  - "JDC-Cn.8"
+  # - "lownoise (90)"
+  - "JDC-Cn.9-MS-SSIM"
+  - JDC-UD
+  - "std AE"
+  # - "std AE (MS-SSIM)"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  # - "JDC-Cn.8-Tdec"
+  - "Testolina"
+ignore_std: True

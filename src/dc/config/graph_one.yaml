@@ -1,0 +1,21 @@
+models_to_graph:
+  - "JDC-Cn.8"
+  - "std AE"
+  - "JPEG"
+  - "BPG"
+  - "JPEGXL"
+  - "denoise+std AE"
+  - "denoise+JPEG"
+  - "denoise+JPEGXL"
+  - "denoise+BPG"
+  - "Testolina"
+  - "JDC-UD"
+xrange:
+  - 0.07
+  - 0.48
+yrange:
+  - 0.88
+  - 0.975
+csv_fpath: "../../results/dc/twomodels_test_denoise_q=[0.7,0.999];-bpp-msssim.csv"
+legend_ncol: 4
+legend_size: 7

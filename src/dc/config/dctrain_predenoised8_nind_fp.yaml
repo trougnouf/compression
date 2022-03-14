@@ -1,0 +1,6 @@
+quality_crops_csv_fpaths:
+  - '../../datasets/denoised/2021-06-14T20:27_nn_train.py_--config_configs-train_conf_utnet_std.yaml_--config2_configs-train_with_clean_data.yaml_--g_model_path_..-..-models-nind_denoise-2021-06-12T11:48_nn_train.py_--config_configs-train_conf_utnet_std.yaml_--config2_configs-train_w/cropped/NIND_256_192-msssim.csv'
+  - '../../datasets/train/denoised/2021-06-14T20:27_nn_train.py_--config_configs-train_conf_utnet_std.yaml_--config2_configs-train_with_clean_data.yaml_--g_model_path_..-..-models-nind_denoise-2021-06-12T11:48_nn_train.py_--config_configs-train_conf_utnet_std.yaml_--config2_configs-train_w/resized/1024/FeaturedPictures-msssim.csv'
+min_quality: 0.80
+batch_size_denoise: 5
+cs: 256

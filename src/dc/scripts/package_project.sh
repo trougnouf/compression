@@ -6,7 +6,7 @@ cd ${DESTDIR}
 #git clone git@github.com:trougnouf/compression.git
 DESTDIR=${DESTDIR}/compression
 cd ${DESTDIR}
-git pull
+#git pull
 #rm ${DESTDIR}/* -r
 cd ${CMPDIR}
 mkdir -p ${DESTDIR}/datasets/test/

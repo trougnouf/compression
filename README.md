@@ -6,21 +6,21 @@ All python code is expected to be run from within one of themain  project sub-di
 
 ## Dependencies:
 
-###Python pip:
+### Python pip:
 
 ```bash
 pip3 install cffi
 pip3 install python-pytorch-msssim tqdm matplotlib scipy scikit-image scikit-video ConfigArgParse pyyaml h5py ptflops colorspacious pypng piqa opencv-python jpegtran-cffi mwclient piexif
 ```
 
-###Arch Linux:
+### Arch Linux:
 
 ```bash
 sudo pacman -S python-tqdm python-pytorch-cuda python-matplotlib python-configargparse python-yaml
 pacaur -S python-ptflops python-colorspacious python-pytorch-msssim-git python-jpegtran-cffi python-scikit-image
 ```
 
-###Slurm:
+### Slurm:
 
 ```bash
 pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
